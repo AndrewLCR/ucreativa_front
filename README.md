@@ -1,4 +1,4 @@
-[![Build](https://github.com/AndrewLCR/ucreativa_front/actions/workflows/build.yml/badge.svg)](https://github.com/AndrewLCR/ucreativa_front/actions/workflows/build.yml)
+<p align="center">[![Build](https://github.com/AndrewLCR/ucreativa_front/actions/workflows/build.yml/badge.svg)](https://github.com/AndrewLCR/ucreativa_front/actions/workflows/build.yml) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=AndrewLCR_ucreativa_front&metric=alert_status)](https://sonarcloud.io/dashboard?id=AndrewLCR_ucreativa_front)</p>
 
 # UcreativaFrontend
 
