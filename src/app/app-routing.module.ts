@@ -6,11 +6,13 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AuthenticationService } from './services/authentication.service';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AuthGuard } from './guards/auth.guard';
+import { NewProductComponent } from './components/new-product/new-product.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'new-product', component: NewProductComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent }
 ];
