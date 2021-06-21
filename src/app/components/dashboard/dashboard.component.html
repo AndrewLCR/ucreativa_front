@@ -1,1 +1,29 @@
-<p>dashboard works!</p>
+<div class="row mt-5 justify-content-center">
+    <div class="col-md-8 col-sm-12 mt-5">
+        <h1 class="text-center">Productos</h1>
+
+        <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table row-border hover" aria-describedby="Products list">
+            <thead>
+                <th scope="col">ID</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Descripción</th>
+                <th scope="col"></th>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.id}}</td>
+                    <td>{{product.name}}</td>
+                    <td>{{product.detail}}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.id)">Eliminar</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="medium" color="#fff" type="square-jelly-box" [fullScreen]="true">
+    <p style="color: white"> Cargando... </p>
+</ngx-spinner>
